@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assesment-01</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/script.js"></script>
+    <script>
+      function myFunction2() {
+        document.getElementById("paras").innerHTML =
+          "This text was changed from a script in the head section";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Assesment 01</h1>
+      </header>
+      <main>
+        <div id="buttons">
+          <button
+            onclick="document.getElementById('chicago1').src='images/chicago1.jpg'"
+          >
+            Image 1
+          </button>
+          <button
+            onclick="document.getElementById('chicago1').src='images/chicago2.jpg'"
+          >
+            Image 2
+          </button>
+          <button
+            onclick="document.getElementById('chicago1').src='images/chicago3.jpg'"
+          >
+            Image 3
+          </button>
+        </div>
+        <div id="images">
+          <img src="images/chicago1.jpg" alt="chicago" id="chicago1" />
+        </div>
+        <div id="buttons">
+          <button
+            onclick="document.getElementById('chicago1').style.display='block'"
+          >
+            Show
+          </button>
+          <button
+            onclick="document.getElementById('chicago1').style.display='none';"
+          >
+            Hide
+          </button>
+        </div>
+      </main>
+      <main>
+        <p id="paras"></p>
+        <script>
+          document.getElementById("paras").innerHTML =
+            "I loaded this using Javascript when the page loaded.";
+        </script>
+      </main>
+      <main>
+        <div id="buttons">
+          <button onclick="myFunction()">Click Me! For External Script</button>
+          <button onclick="myFunction2()">Click Me! For Head Script</button>
+        </div>
+      </main>
+      <main>
+        <div id="buttons">
+          <button
+            onclick="document.getElementById('chicago1').style.width='200px';"
+          >
+            Change Width
+          </button>
+          <button
+            onclick="document.getElementById('paras').style.color='grey';"
+          >
+            Change Color
+          </button>
+        </div>
+      </main>
+    </div>
+    <footer>&copy;Will Standley 2025</footer>
+  </body>
+</html>
