@@ -40,7 +40,12 @@ h3 {
   width: 60%;
   padding: 10px;
   margin: 10px 10px 30px 10px;
-  float: left;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 #item {
@@ -79,6 +84,32 @@ label {
   float: left;
 }
 
+.total {
+  text-align: center;
+}
+
+#total_but {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(8, 61, 8);
+  border: 2px solid black;
+  color: rgb(250, 250, 164);
+  border-radius: 10px;
+  font-size: large;
+}
+
+#choice_q {
+  float: left;
+  width: 40%;
+  font-size: large;
+  margin: 2px;
+  overflow: auto;
+}
+
+input {
+  width: 10%;
+}
+
 #buttons button {
   padding: 10px;
   margin: 10%;
@@ -89,18 +120,6 @@ label {
   font-size: large;
 }
 
-#images {
-  float: right;
-  padding: 10px;
-  width: 60%;
-  margin: 10px;
-  background: rgb(8, 61, 8);
-}
-
-#images img {
-  max-width: 100%;
-}
-
 p {
   color: black;
 }
@@ -109,4 +128,32 @@ p {
 
 footer {
   text-align: center;
+}
+
+#name {
+  display: inline;
+}
+
+#count_drink1,
+#count_drink2,
+#count_drink3,
+#count_drink4,
+#count_drink5 {
+  display: none;
+}
+
+#count_sandwich1,
+#count_sandwich2,
+#count_sandwich3,
+#count_sandwich4,
+#count_sandwich5 {
+  display: none;
+}
+
+#count_side1,
+#count_side2,
+#count_side3,
+#count_side4,
+#count_side5 {
+  display: none;
 }

@@ -18,81 +18,184 @@
           <label for="name">Who's Order:</label>
           <input type="text" id="name" name="fname" /><br />
         </div>
-        <div class="menu">
-          <div id="drinks">
-            <h3><u>Drinks</u></h3>
-            <div id="item">
-              <input type="checkbox" id="drink1" />
-              <label for="drink1">Water</label>
+        <div class="container">
+          <div class="menu">
+            <div id="drinks">
+              <h3><u>Drinks</u></h3>
+              <div id="item">
+                <input type="checkbox" id="drink1" onclick="getDrink1()" />
+                <label for="drink1" id="item">Water</label>
+                <div id="count_drink1">
+                  <label for="how_many_drinks1" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_drinks1" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="drink2" onclick="getDrink2()" />
+                <label for="drink2" id="item">Dr.Pepper</label>
+                <div id="count_drink2">
+                  <label for="how_many_drinks2" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_drinks2" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="drink3" onclick="getDrink3()" />
+                <label for="drink3" id="item">Pepsi</label>
+                <div id="count_drink3">
+                  <label for="how_many_drinks3" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_drinks3" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="drink4" onclick="getDrink4()" />
+                <label for="drink4" id="item">Mt.Dew</label>
+                <div id="count_drink4">
+                  <label for="how_many_drinks4" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_drinks4" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="drink5" onclick="getDrink5()" />
+                <label for="drink5" id="item">Lemonade</label>
+                <div id="count_drink5">
+                  <label for="how_many_drinks5" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_drinks5" />
+                </div>
+              </div>
             </div>
-            <div id="item">
-              <input type="checkbox" id="drink2" />
-              <label for="drink2">Dr.Pepper</label>
+
+            <div id="sandwiches">
+              <h3><u>Sandwiches</u></h3>
+              <div id="item">
+                <input
+                  type="checkbox"
+                  id="sandwich1"
+                  onclick="getSandwich1()"
+                />
+                <label for="sandwich1" id="item">Ham Sandwich</label>
+                <div id="count_sandwich1">
+                  <label for="how_many_sandwiches1" id="choice_q"
+                    >How Many:
+                  </label>
+                  <input type="text" id="how_many_sandwiches1" />
+                </div>
+              </div>
+              <div id="item">
+                <input
+                  type="checkbox"
+                  id="sandwich2"
+                  onclick="getSandwich2()"
+                />
+                <label for="sandwich2" id="item">PB&J Sandwich</label>
+                <div id="count_sandwich2">
+                  <label for="how_many_sandwiches2" id="choice_q"
+                    >How Many:
+                  </label>
+                  <input type="text" id="how_many_sandwiches2" />
+                </div>
+              </div>
+              <div id="item">
+                <input
+                  type="checkbox"
+                  id="sandwich3"
+                  onclick="getSandwich3()"
+                />
+                <label for="sandwich3" id="item">Turkey Sandwich</label>
+                <div id="count_sandwich3">
+                  <label for="how_many_sandwiches3" id="choice_q"
+                    >How Many:
+                  </label>
+                  <input type="text" id="how_many_sandwiches3" />
+                </div>
+              </div>
+              <div id="item">
+                <input
+                  type="checkbox"
+                  id="sandwich4"
+                  onclick="getSandwich4()"
+                />
+                <label for="sandwich4" id="item">BLT Sandwich</label>
+                <div id="count_sandwich4">
+                  <label for="how_many_sandwiches4" id="choice_q"
+                    >How Many:
+                  </label>
+                  <input type="text" id="how_many_sandwiches4" />
+                </div>
+              </div>
+              <div id="item">
+                <input
+                  type="checkbox"
+                  id="sandwich5"
+                  onclick="getSandwich5()"
+                />
+                <label for="sandwich5" id="item">The Meat Tornado</label>
+                <div id="count_sandwich5">
+                  <label for="how_many_sandwiches5" id="choice_q"
+                    >How Many:
+                  </label>
+                  <input type="text" id="how_many_sandwiches5" />
+                </div>
+              </div>
             </div>
-            <div id="item">
-              <input type="checkbox" id="drink3" />
-              <label for="drink3">Pepsi</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="drink4" />
-              <label for="drink4">Mt.Dew</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="drink5" />
-              <label for="drink5">Lemonade</label>
+
+            <div id="sides">
+              <h3><u>Sides</u></h3>
+              <div id="item">
+                <input type="checkbox" id="side1" onclick="getSide1()" />
+                <label for="side1" id="item">French Fries</label>
+                <div id="count_side1">
+                  <label for="how_many_sides1" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_sides1" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="side2" onclick="getSide2()" />
+                <label for="side2" id="item">Salad</label>
+                <div id="count_side2">
+                  <label for="how_many_sides2" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_sides2" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="side3" onclick="getSide3()" />
+                <label for="side3" id="item">Soup</label>
+                <div id="count_side3">
+                  <label for="how_many_sides3" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_sides3" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="side4" onclick="getSide4()" />
+                <label for="side4" id="item">Baked Potato</label>
+                <div id="count_side4">
+                  <label for="how_many_sides4" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_sides4" />
+                </div>
+              </div>
+              <div id="item">
+                <input type="checkbox" id="side5" onclick="getSide5()" />
+                <label for="side5" id="item">Coleslaw</label>
+                <div id="count_side5">
+                  <label for="how_many_sides5" id="choice_q">How Many: </label>
+                  <input type="text" id="how_many_sides5" />
+                </div>
+              </div>
             </div>
           </div>
-
-          <div id="sandwiches">
-            <h3><u>Sandwiches</u></h3>
-            <div id="item">
-              <input type="checkbox" id="sandwich1" />
-              <label for="sandwich1">Ham Sandwich</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="sandwich2" />
-              <label for="sandwich2">PB&J Sandwich</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="sandwich3" />
-              <label for="sandwich3">Turkey Sandwich</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="sandwich4" />
-              <label for="sandwich4">BLT Sandwich</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="sandwich5" />
-              <label for="sandwich5">The Meat Tornado</label>
-            </div>
-          </div>
-
-          <div id="sides">
-            <h3><u>Sides</u></h3>
-            <div id="item">
-              <input type="checkbox" id="side1" />
-              <label for="side1">French Fries</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="side2" />
-              <label for="side2">Salad</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="side3" />
-              <label for="side3">Soup</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="side4" />
-              <label for="side4">Baked Potato</label>
-            </div>
-            <div id="item">
-              <input type="checkbox" id="side5" />
-              <label for="side5">Coleslaw</label>
+          <div id="cx_order">
+            <h3><u>Your Order</u></h3>
+            <div id="ordered_items">
+              <h4 id="ordered_drinks"></h4>
+              <h4 id="ordered_sandwiches"></h4>
+              <h4 id="ordered_sides"></h4>
             </div>
           </div>
         </div>
-        <div id="cx_order">
-          <h3><u>Your Order</u></h3>
+        <div class="total">
+          <button type="button" id="total_but" onclick="totalCost()">
+            Total Up!
+          </button>
+          <h3 id="order_total"></h3>
         </div>
       </form>
     </main>
