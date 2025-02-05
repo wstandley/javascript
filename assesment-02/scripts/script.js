@@ -1,5 +1,3 @@
-// Add JS to add total cost of what customer ordered //
-
 // Drink Functions
 function getDrink1() {
   document.getElementById("count_drink1").style.display = "inline-block";
