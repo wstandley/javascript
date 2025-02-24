@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+}
+
+header {
+  text-align: center;
+  font-size: 28px;
+}
+
+main {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+form {
+  padding: 15px;
+}
+
+button {
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
