@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(0, 50, 0);
+}
+
+header {
+  text-align: center;
+  font-size: 32px;
+  color: rgb(247, 255, 189);
+}
+
+main {
+  width: 20%;
+  color: rgb(247, 255, 189);
+  margin: 10px auto;
+}
+
+.month_holiday {
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+footer {
+  background-color: rgb(0, 50, 0);
+  color: rgb(247, 255, 189);
+  text-align: center;
+}
