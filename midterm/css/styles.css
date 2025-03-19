@@ -1,0 +1,65 @@
+body {
+  background-color: #7a9cc6;
+}
+
+.container {
+  background-color: #9fbbcc;
+}
+
+/* Header Stylings */
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: white;
+}
+
+/* Main Body Stylings */
+
+h3 {
+  font-size: x-large;
+  text-align: center;
+  color: white;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+button {
+  padding: 7px;
+  border-radius: 10px;
+  font-size: medium;
+  margin: 10px;
+  border: 2px solid #2672cf;
+  background-color: #7a9cc6;
+  color: white;
+}
+
+img {
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+}
+
+#content {
+  display: none;
+  text-align: center;
+}
+
+#correct-answer {
+  /* Add display: none; once testing is done */
+}
+
+/* Footer Stylings */
+footer {
+  font-size: larger;
+  text-align: center;
+}

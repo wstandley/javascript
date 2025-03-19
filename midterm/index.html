@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Midterm Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Logo Guesser</h1>
+      </header>
+      <main>
+        <h3>Pick Your Category to Guess From!</h3>
+        <div class="categories">
+          <button onclick="onClick('cars')">Car Brands</button>
+          <button onclick="onClick('fast-food')">Fast Food Restaurants</button>
+          <button onclick="onClick('clothing')">Clothing Brands</button>
+          <button onclick="onClick('football')">NFL Teams</button>
+        </div>
+        <div id="content">
+          <img src="../learn05-start/images/black-dog.jpg" alt="" id="image" />
+          <div>
+            <p id="user-choices"></p>
+          </div>
+          <p id="correct-answer"></p>
+          <p id="test"></p>
+        </div>
+      </main>
+      <footer>&copy;2025 Will Standley</footer>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
