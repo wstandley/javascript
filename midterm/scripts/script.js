@@ -132,5 +132,18 @@ function onClick(choiceCategory) {
 
 // Allows for each array to have every item listed through when called in onClick function
 function devinMethod(value) {
-  txt += "<button>" + value + "</button>";
+  txt += '<button onclick="theAnswer(${value})">' + value + "</button>";
+}
+
+function newButtons() {
+  // This Function will be needed to have the devinMethod buttons be mapped to correct answers and images
+}
+
+function theAnswer() {
+  // This function should be able to compare the new button that was clicked to the answer
+  if (value == answer) {
+    document.getElementById("correct-answer").innerHTML = "You Guessed it!";
+  } else {
+    document.getElementById("correct-answer").innerHTML = "Guess Again";
+  }
 }
