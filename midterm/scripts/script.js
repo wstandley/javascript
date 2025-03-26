@@ -350,3 +350,6 @@ function myFunction(usersChoice) {
       "That was incorrect, try again.";
   }
 }
+
+// Technically at this point I've completed all the minimum requirements for the project
+// Everything after this will be extra
