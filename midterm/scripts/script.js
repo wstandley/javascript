@@ -5,10 +5,16 @@ const cars = new Map([
   ],
   [
     "Chevrolet",
-    "https://spng.pngfind.com/pngs/s/682-6823814_transparent-chevy-logo-clipart-transparent-background-chevy-logo.png",
+    "https://cdn.freebiesupply.com/logos/large/2x/chevrolet-5-logo-png-transparent.png",
   ],
-  ["BMW", "https://icon2.cleanpng.com/20180716/rql/aavfg3tp3.webp"],
-  ["Audi", "https://www.pngpacks.com/uploads/data/369/IMG_QUOTGNCWc5o8.png"],
+  [
+    "BMW",
+    "https://cdn.freebiesupply.com/logos/large/2x/bmw-m-series-1-logo-png-transparent.png",
+  ],
+  [
+    "Audi",
+    "https://cdn.freebiesupply.com/logos/large/2x/audi-1-logo-png-transparent.png",
+  ],
   ["Toyota", "https://www.freeiconspng.com/uploads/toyota-logo-png-25.png"],
   ["Jeep", "https://www.carlogos.org/logo/Jeep-symbol-black-1920x1080.png"],
   ["Subaru", "https://pngimg.com/d/subaru_PNG11965.png"],
@@ -20,7 +26,7 @@ const cars = new Map([
   ],
   [
     "Jaguar",
-    "https://toppng.com/uploads/preview/its-exactly-what-the-name-says-jaguar-cars-logo-hd-11568965850hsycipbyak.png",
+    "https://www.pngarts.com/files/3/Jaguar-Logo-PNG-High-Quality-Image.png",
   ],
   [
     "Dodge",
@@ -92,7 +98,10 @@ const clothing = new Map([
     "Chanel",
     "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Chanel_logo-no_words.svg/2560px-Chanel_logo-no_words.svg.png",
   ],
-  ["Ralph Lauren", "https://icon2.cleanpng.com/20180328/txq/avd6hm2pd.webp"],
+  [
+    "Ralph Lauren",
+    "https://companieslogo.com/img/orig/RL-fe27c7e6.png?t=1720244493",
+  ],
   [
     "Louis Vuitton",
     "https://cdn.iconscout.com/icon/free/png-256/free-louis-vuitton-logo-icon-download-in-svg-png-gif-file-formats--brand-fashion-pack-logos-icons-2854265.png?f=webp&w=256",
@@ -103,8 +112,11 @@ const clothing = new Map([
     "Levis",
     "https://cdn.iconscout.com/icon/free/png-256/free-levis-logo-icon-download-in-svg-png-gif-file-formats--brand-fashion-pack-company-logos-icons-2854579.png",
   ],
-  ["New Balance", "https://icon2.cleanpng.com/20180713/krf/aawymlc6q.webp"],
-  ["Puma", "https://icon2.cleanpng.com/20180712/rar/aawznlke4.webp"],
+  [
+    "New Balance",
+    "https://brandlogos.net/wp-content/uploads/2014/11/new-balance-logo.png",
+  ],
+  ["Puma", "https://loodibee.com/wp-content/uploads/Puma-Logo-Symbol.png"],
 ]);
 
 const football = new Map([
@@ -338,18 +350,16 @@ function onClick(choiceCategory) {
 
 // Allows for each array to have every item listed through when called in onClick function
 function devinMethod(value, key) {
-  txt += `<button onclick="myFunction('${key}')">` + key + `</button>`;
+  txt +=
+    `<button onclick="myFunction('${key}')" id="${key}">` + key + `</button>`;
 }
 
 // This function will compare the users choice of answer to the actual correct answer
 function myFunction(usersChoice) {
   if (usersChoice == answer) {
-    document.getElementById("test").innerHTML = "That was correct!";
+    alert("That was correct! \n\n Click Another Category to Play Again!");
   } else if (usersChoice != answer) {
-    document.getElementById("test").innerHTML =
-      "That was incorrect, try again.";
+    alert("That was incorrect!");
+    document.getElementById(usersChoice).style.display = "none";
   }
 }
-
-// Technically at this point I've completed all the minimum requirements for the project
-// Everything after this will be extra
