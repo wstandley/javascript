@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide-para").click(function () {
+          $("p").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#hide-div").click(function () {
+          $("#paras").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("h2").click(function () {
+          $("h2").hide();
+        });
+      });
+    </script>
+    <title>jQuery Lesson</title>
+  </head>
+  <body>
+    <header><h1>jQuery Lesson</h1></header>
+    <main>
+      <h2>This page demonstrates the usage of jQuery</h2>
+      <div id="paras">
+        <h2>Paragraphs</h2>
+        <p>One Paragraph</p>
+        <p>Two Paragraphs</p>
+        <p>Three Paragraphs</p>
+      </div>
+      <div id="buttons">
+        <h2>Buttons</h2>
+        <button id="hide-para">Hide Paragraph Elements</button>
+        <button id="hide-div">Hide Paragraphs Div</button>
+      </div>
+    </main>
+    <footer>&copy;2025 Will Standley</footer>
+  </body>
+</html>
