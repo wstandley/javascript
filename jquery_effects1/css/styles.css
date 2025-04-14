@@ -1,0 +1,31 @@
+body {
+  background-color: rgba(187, 255, 255, 0.714);
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  margin: 10px auto;
+  width: 80%;
+}
+
+h2 {
+  text-align: right;
+}
+
+div {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 300px;
+}

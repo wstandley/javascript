@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("#magic-text").hide();
+        });
+      });
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("#magic-image").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#show").click(function () {
+          $("#magic-text").show();
+        });
+      });
+      $(document).ready(function () {
+        $("#show").click(function () {
+          $("#magic-image").show();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#fade-out").click(function () {
+          $("#fade-text").fadeOut();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#fade-out").click(function () {
+          $("#fade-image").fadeOut();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#fade-in").click(function () {
+          $("#fade-text").fadeIn();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#fade-in").click(function () {
+          $("#fade-image").fadeIn();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#slideUp").click(function () {
+          $("#sliding-text").slideUp();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#slideUp").click(function () {
+          $("#sliding-image").slideUp();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#slideDown").click(function () {
+          $("#sliding-text").slideDown();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#slideDown").click(function () {
+          $("#sliding-image").slideDown();
+        });
+      });
+    </script>
+    <title>Module 4 Assignment 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>jQuery Effects</h1>
+    </header>
+    <main>
+      <div id="hide_show">
+        <h2>Hide/Show</h2>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <p id="magic-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+          quia aliquid fugiat recusandae, commodi mollitia. Repellat consectetur
+          tenetur qui magnam illo neque iure aliquam, reprehenderit adipisci
+          suscipit cupiditate veritatis dolorem?
+        </p>
+        <img
+          src="https://media.istockphoto.com/id/183347827/photo/leather-american-football-on-white-background.jpg?s=2048x2048&w=is&k=20&c=1z8ATtpF0ZosURDjVMw7iTHOCTpv_A1V1i81mTTEbUU="
+          alt="football"
+          id="magic-image"
+        />
+      </div>
+      <div id="fade">
+        <h2>Fade</h2>
+        <button id="fade-out">FadeOut</button>
+        <button id="fade-in">FadeIn</button>
+        <p id="fade-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem
+          nesciunt laudantium mollitia iusto fuga vero suscipit itaque aperiam
+          asperiores dicta exercitationem consequuntur, facere, dolor porro
+          consequatur recusandae expedita sequi.
+        </p>
+        <img
+          src="https://media.istockphoto.com/id/2161427108/photo/american-football-ball-on-green-grass.jpg?s=2048x2048&w=is&k=20&c=YcEBSKPBFz2cQTJiiP3u4WUkcUccwqcrpJQIt9S3gdw="
+          alt="grass"
+          id="fade-image"
+        />
+      </div>
+      <div id="slide">
+        <h2>Slide</h2>
+        <button id="slideUp">SlideUp</button>
+        <button id="slideDown">SlideDown</button>
+        <p id="sliding-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+          sapiente, consectetur officia illo asperiores nulla quia quas quasi,
+          in nam ipsam labore unde beatae explicabo consequuntur earum saepe
+          possimus modi.
+        </p>
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/29/03/53/athletes-1867185_1280.jpg"
+          alt="team"
+          id="sliding-image"
+        />
+      </div>
+    </main>
+  </body>
+</html>
