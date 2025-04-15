@@ -1,0 +1,37 @@
+#moving-object {
+  width: 100px;
+  min-height: 100px;
+  background: black;
+  position: absolute;
+  left: 40px;
+}
+
+#sliding-object {
+  width: 100px;
+  min-height: 100px;
+  background: black;
+  left: 300px;
+  position: absolute;
+  display: none;
+  padding: 100px;
+}
+
+#chain-object {
+  width: 100px;
+  min-height: 100px;
+  background: black;
+  left: 500px;
+  position: absolute;
+  padding: 50px;
+}
+
+main,
+footer,
+header {
+  overflow: auto;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+}
