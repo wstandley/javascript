@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/query.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>jQuery HTML</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>You And Your Games</h1>
+      </header>
+      <main>
+        <div id="buttons">
+          <div id="dark-light">
+            <button id="dark">Dark</button>
+            <button id="light">Light</button>
+          </div>
+          <div id="larger-smaller">
+            <button id="larger">Increase Font</button>
+            <button id="smaller">Decrease Font</button>
+          </div>
+        </div>
+        <div id="fill-out">
+          <form action="">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" />
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" />
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" />
+
+            <label for="console">Console:</label>
+            <input type="text" id="console" />
+
+            <label for="game">Game Title:</label>
+            <input type="text" id="game" />
+          </form>
+        </div>
+        <button id="get-info">Submit</button>
+        <p id="fill-in"></p>
+      </main>
+      <footer>&copy;2025 Will Standley</footer>
+    </div>
+  </body>
+</html>

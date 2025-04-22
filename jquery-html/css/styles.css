@@ -1,0 +1,54 @@
+body {
+  background-color: red;
+  font-size: x-large;
+}
+
+.dark {
+  background-color: rgb(46, 27, 54);
+}
+
+.light {
+  background-color: red;
+}
+
+.container {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.851);
+  width: 80%;
+}
+
+header {
+  text-align: center;
+  font-size: x-large;
+}
+
+main {
+  margin: 10px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  padding: 5px;
+  margin: 5px;
+}
+
+form {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: auto;
+}
+
+input {
+  width: 10%;
+  min-width: 100px;
+}
+
+footer {
+  text-align: center;
+}
