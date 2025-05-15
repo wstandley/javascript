@@ -1,0 +1,61 @@
+header {
+  text-align: center;
+}
+
+#jason,
+#jay-quack1,
+#jay-quack2 {
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.434);
+  overflow: auto;
+}
+
+#jason {
+  margin: 10px auto;
+  float: left;
+}
+
+main {
+  overflow: auto;
+}
+
+#j-list {
+  margin: 10px;
+  padding: 10px;
+}
+
+#jay-quack1 {
+  max-width: 400px;
+  position: absolute;
+  left: -400px;
+  padding: 10px;
+}
+
+#jay-quack2 {
+  margin: 10px auto;
+  padding: 20px;
+  float: right;
+}
+
+img {
+  max-width: 125px;
+}
+
+button {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#stuff {
+  display: none;
+}
+
+footer {
+  text-align: center;
+}
